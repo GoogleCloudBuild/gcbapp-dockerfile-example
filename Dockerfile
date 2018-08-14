@@ -1,3 +1,4 @@
 FROM alpine
-COPY helloworld.sh /
+
+COPY helloworld.sh /var/
 CMD ["/helloworld.sh"]
