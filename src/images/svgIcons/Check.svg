@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="14px" viewBox="0 0 15 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 51.2 (57516) - http://www.bohemiancoding.com/sketch -->
+    <title>check@2x</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 0 14 15 14 15 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="International-Experiences---Desktop---Form" transform="translate(-187.000000, -3539.000000)">
+            <g id="Innovative-learning-opportunities" transform="translate(185.000000, 3306.000000)">
+                <g id="TEXT" transform="translate(0.000000, 67.000000)">
+                    <g id="the-benefits" transform="translate(2.000000, 166.000000)">
+                        <g id="checks">
+                            <g id="check">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M14.6433029,1.01949508 L13.296197,0.134774058 C12.924711,-0.107635148 12.4158878,-0.0140100355 12.1652285,0.343071788 L5.57078911,9.74840381 L2.53961341,6.81699429 C2.22291221,6.51216834 1.70658419,6.51216834 1.38913251,6.81699429 L0.238651615,7.93178632 C-0.0795505383,8.2387896 -0.0795505383,8.73739775 0.238651615,9.04512681 L4.89836192,13.5536477 C5.16027831,13.805492 5.57003863,14 5.93927321,14 C6.30850778,14 6.68074426,13.7750094 6.92014636,13.4382493 L14.8601906,2.11178806 C15.1116004,1.75470623 15.0147889,1.26335584 14.6433029,1.01949508" id="Fill-1" fill="#2C3054" mask="url(#mask-2)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

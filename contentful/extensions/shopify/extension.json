@@ -1,0 +1,22 @@
+{
+  "name": "Shopify Products",
+  "id": "contentful-ui-shopify",
+  "fieldTypes": ["Object"],
+  "srcdoc": "./index.html",
+  "parameters": {
+    "installation": [
+      {
+        "id": "apiToken",
+        "name": "Shopify Access Token",
+        "type": "Symbol",
+        "default": "d6c794c3b229749abd1d06b3ea0a7dcb"
+      },
+      {
+        "id": "apiEndpoint",
+        "name": "Shopify GraphQL endpoint",
+        "type": "Symbol",
+        "default": "https://crimson-education.myshopify.com/api/graphql"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+ --colors
+ --recursive
+ --require src/utils/globals.js

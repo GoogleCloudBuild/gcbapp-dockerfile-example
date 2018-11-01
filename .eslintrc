@@ -1,0 +1,85 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint-config-airbnb"
+  ],
+  "plugins": [
+    "react",
+    "import",
+    "styled-components-config"
+  ],
+  "settings": {
+    "import/resolve": {
+      "moduleDirectory": [
+        "node_modules",
+        "src"
+      ]
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "globals": {
+    "__DEV__"      : false,
+    "__TEST__"     : false,
+    "__PROD__"     : false,
+    "__COVERAGE__" : false,
+    "graphql": false,
+    "expect": false
+  },
+  "rules": {
+    "max-len": ["error", 120, 2],
+    "arrow-parens": ["error", "always"],
+    "brace-style": ["error", "1tbs", {"allowSingleLine": true}],
+    "comma-dangle": ["error", "always-multiline"],
+    "consistent-return": "off",
+    "curly": ["error", "all"],
+    "eol-last": "error",
+    "global-require": "off",
+    "import/extensions": "off",
+    "import/default": "off",
+    "import/named": "off",
+    "import/namespace": "off",
+    "import/no-named-as-default": "error",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "jsx-quotes": ["error", "prefer-single"],
+    "key-spacing": "off",
+    "keyword-spacing": ["error", {"before": true, "after": true}],
+    "no-alert": "off",
+    "no-case-declarations": "off",
+    "no-console": ["error", {"allow": ["error", "warn", "info"]}],
+    "no-extra-semi": "error",
+    "no-multi-spaces": "off",
+    "no-param-reassign": "off",
+    "no-spaced-func": "error",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "error",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "one-var": ["error", "never"],
+    "prefer-arrow-callback": "error",
+    prefer-destructuring: "off",
+    "prefer-template": "warn",
+    "quotes": ["error", "single"],
+    "react/destructuring-assignment": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "react/jsx-first-prop-new-line": ["warn", "multiline"],
+    "react/jsx-one-expression-per-line": "off",
+    "react/no-multi-comp": "warn",
+    "react/forbid-prop-types": "off",
+    "react/no-find-dom-node": "off",
+    "react/no-unused-prop-types": ["warn", {skipShapeProps: true}],
+    "react/require-default-props": "off",
+    "require-yield": "error",
+    "space-before-blocks": ["error", "always"],
+    "space-infix-ops": "warn"
+  }
+}
