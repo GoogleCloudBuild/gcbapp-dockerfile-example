@@ -2,7 +2,7 @@ const githubApi = require('./api/github');
 
 const oauthToken = 'f51465a819792027b4f' + '94e32e663e92d64359460';
 const owner = 'adrianso';
-const repo = 'github-integration';
+const repo = 'gcbapp-dockerfile-example';
 const steps = [
   '1. Install Dependencies',
   '2. ESLint',
