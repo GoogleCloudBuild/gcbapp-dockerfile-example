@@ -24,7 +24,6 @@ steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run': 'devops:start-deployment', '$REVISION_ID']
   - name: gcr.io/cloud-builders/gsutil
-    args:
-      ['-m', 'cp', '-r', 'public', 'gs://build.crimsoneducation.io/$BUILD_ID']
+    args: ['-m', 'cp', '-r', 'public', 'gs://build.crimsoneducation.io/$BUILD_ID']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run': 'devops:deployment-complete', '$REVISION_ID']
