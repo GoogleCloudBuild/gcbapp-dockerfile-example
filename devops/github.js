@@ -1,6 +1,6 @@
 const githubApi = require('./api/github');
 
-const oauthToken = '0e8e0e38c8835e353efe2838544d5fb9a9da0843';
+const oauthToken = 'f51465a819792027b4f' + '94e32e663e92d64359460';
 const owner = 'adrianso';
 const repo = 'github-integration';
 const steps = [
