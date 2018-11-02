@@ -1,7 +1,4 @@
 steps:
-  - name: 'gcr.io/cloud-builders/npm'
-    args: ['run', 'devops:start-build', '$REVISION_ID']
-  - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run': 'devops:step-complete', '$REVISION_ID', '0']
