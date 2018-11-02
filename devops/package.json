@@ -1,0 +1,16 @@
+{
+  "name": "devops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "github.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
