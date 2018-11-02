@@ -1,0 +1,30 @@
+steps:
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'devops:start-build', '$REVISION_ID']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run': 'devops:step-complete', '$REVISION_ID', 0]
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'lint']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run': 'devops:step-complete', '$REVISION_ID', 1]
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'setup']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run': 'devops:step-complete', '$REVISION_ID', 2]
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['test']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run': 'devops:step-complete', '$REVISION_ID', 3]
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run': 'devops:step-complete', '$REVISION_ID', 4]
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run': 'devops:start-deployment', '$REVISION_ID']
+  - name: gcr.io/cloud-builders/gsutil
+    args:
+      ['-m', 'cp', '-r', 'public', 'gs://build.crimsoneducation.io/$BUILD_ID']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run': 'devops:deployment-complete', '$REVISION_ID']
