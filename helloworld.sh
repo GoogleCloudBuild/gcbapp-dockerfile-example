@@ -1,3 +1,3 @@
 #!/bin/sh
-echo "Hello!"
+echo "bonjour David !"
 echo "Nous sommes le $(date)."
