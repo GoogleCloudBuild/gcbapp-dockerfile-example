@@ -1,2 +1,3 @@
-FROM ubuntu
-RUN python helloworld.py
+FROM alpine
+COPY helloworld.sh /
+CMD ["/helloworld.sh"]
