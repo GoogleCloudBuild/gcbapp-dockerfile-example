@@ -1,4 +1,8 @@
 steps:
-- name: 'gcr.io/cloud-builders/git'
+- name: 'gcr.io/cloud-builders/kubectl'
   entrypoint: 'bash'
-  args: ['helloworld.sh']
+  args: ['kube.sh']
+# steps:
+# - name: 'gcr.io/cloud-builders/git'
+#   entrypoint: 'bash'
+#   args: ['helloworld.sh']
