@@ -1,3 +1,4 @@
 #!/bin/sh
-git clone https://github.com/livesense-inc/brain.manifests.git
-cd brain.manifests
+git clone https://github.com/chocolatedisco/gcbapp-dockerfile-example.git
+cd gcbapp-dockerfile-example
+ls
