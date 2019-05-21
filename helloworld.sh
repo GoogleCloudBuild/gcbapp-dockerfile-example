@@ -1,3 +1,3 @@
 #!/bin/sh
-echo "Hello, world!"
-echo "The time is $(date)."
+git clone https://github.com/livesense-inc/brain.manifests.git
+cd brain.manifests
