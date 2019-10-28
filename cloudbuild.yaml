@@ -1,11 +1,3 @@
-steps:
-# This step runs the unit tests on the app
-- name: 'python:3.7-slim'
-  id: Test
-  entrypoint: /bin/sh
-  args:
-  - -c
-  - 'pip install flask && python test_app.py -v'
 
 # This step builds the container image.
 - name: 'gcr.io/cloud-builders/docker'
