@@ -1,3 +1,11 @@
+steps:
+# This step runs the unit tests on the app
+- name: 'python:3.7-slim'
+  id: Test
+  entrypoint: /bin/sh
+  args:
+  - -c
+  - 'pip install flask && python test_app.py -v'
 
 # This step builds the container image.
 - name: 'gcr.io/cloud-builders/docker'
@@ -5,7 +13,7 @@
   args:
   - 'build'
   - '-t'
-  - 'gcr.io/$PROJECT_ID/helloworld:$SHORT_SHA'
+  - 'gcr.io/$PROJECT_ID/hello-cloudbuild:$SHORT_SHA'
   - '.'
 
 # This step pushes the image to Container Registry
@@ -15,4 +23,4 @@
   id: Push
   args:
   - 'push'
-  - 'gcr.io/$PROJECT_ID/helloworld:$SHORT_SHA'
+  - 'gcr.io/$PROJECT_ID/hello-cloudbuild:$SHORT_SHA'
