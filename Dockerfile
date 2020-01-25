@@ -14,4 +14,4 @@
 
 FROM alpine
 COPY app.py /
-CMD ["/app.py"]
+CMD ["/ap.py"]
