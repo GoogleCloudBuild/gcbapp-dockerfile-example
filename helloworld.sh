@@ -13,4 +13,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-echo "The time is $(date). Test." 
+echo "The time is $(date)." 
