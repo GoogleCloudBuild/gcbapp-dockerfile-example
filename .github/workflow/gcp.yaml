@@ -1,0 +1,43 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+    - 'ENV-dev'
+
+env:
+  PROJECT_ID: ${{ secrets.GCP_DEV_PROJECT_ID }}
+  RUN_REGION: us-central1
+  SERVICE_NAME: my-test-service
+
+jobs:
+  setup-build-deploy:
+    name: Setup, Build, and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # Setup gcloud CLI
+    - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      with:
+        version: '290.0.1'
+        service_account_key: ${{ secrets.GCP_DEV_SA_KEY }}
+        project_id: ${{ secrets.GCP_DEV_PROJECT_ID }}
+
+    - name: Build
+          run: |-
+            echo "Buiding ..."
+            export MY_PROJECT_ID=$(gcloud info --format='value(config.project)')
+            echo "MY_PROJET_ID is:"
+            echo $MY_PROJECT_ID
+            echo "PROJET_ID is:"
+            echo $PROJECT_ID
+            gcloud services list --enabled
+
+    - name: Deploy
+      run: |-
+        env
+        echo $PROJECT_ID
+        gsutil ls
