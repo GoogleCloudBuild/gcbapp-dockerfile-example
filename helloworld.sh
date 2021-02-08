@@ -16,4 +16,3 @@
 echo "Hello, world!"
 echo "The time is $(date)."
 echo "The is image from devopsvj"
-echo "The is image from devopsvj"
