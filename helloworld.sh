@@ -15,3 +15,4 @@
 
 echo "Hello, world!"
 echo "The time is $(date)."
+echo "Adding a new line."
